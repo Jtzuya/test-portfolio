@@ -15,6 +15,11 @@ $font-weights: (
     box-sizing: border-box;
 }
 
+a:hover {
+    color: rgb(233, 233, 233);
+    transition: ease-in 0.2s;
+}
+
 body {
     background-color: $primary-color;
     font-family: "Poppins", sans-serif;
@@ -62,12 +67,21 @@ main {
     }
 }
 
+svg {
+    width: 60px;
+    height: 60px;
+}
+
+svg:hover {
+    fill: gold;
+}
+
 .main-icons {
     display: flex;
     padding-top: 164px;   
     padding-bottom: 101px;
     .social-media {
-        padding-right: 45%; 
+        padding-right: 45%;
     }
     .mouse-scroll {
        position: relative;
@@ -104,3 +118,4 @@ section {
     padding-top: 161px;
     background-color: white;
 }
+
