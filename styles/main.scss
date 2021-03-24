@@ -9,9 +9,18 @@ $font-weights: (
     "bold": 700
 );
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: $primary-color;
     font-family: "Poppins", sans-serif;
+}
+
+header, main, .main-icons {
     margin: 0 140px 0 140px;
 }
 
@@ -55,7 +64,8 @@ main {
 
 .main-icons {
     display: flex;
-    padding-top: 184px;   
+    padding-top: 164px;   
+    padding-bottom: 101px;
     .social-media {
         padding-right: 45%; 
     }
@@ -72,7 +82,7 @@ main {
         width: 10px;
         height: 15px;
         content: '';
-        background-color: $secondary-color;
+        background-color: #fff;
         border-radius: 50px;
         margin-left: 32%;
         animation: scroll 1.2s infinite;
@@ -88,4 +98,9 @@ main {
             top: 35px;
         }
     }
+}
+
+section {
+    padding-top: 161px;
+    background-color: white;
 }
